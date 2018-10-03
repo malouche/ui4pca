@@ -12,5 +12,8 @@
 
 runPCA<-function(){
   library(shiny)
-  runApp("R/")
+  zz=list.dirs(.libPaths())
+  i=grep("ui4pca/R",zz)
+  appDir<-zz[i]
+  shiny::runApp(appDir, display.mode = "normal")
 }
