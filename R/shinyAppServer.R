@@ -1,7 +1,8 @@
 #' Shiny app server object
 #'
 #' @importFrom graphics hist
-#' @import shiny
+#' @import shiny, shiny,ggplot2, plyr, FactoMineR, factoextra, DT, ggrepel, scales,grid,gridExtra
+
 
 shinyAppServer = function(input, output, session){
 

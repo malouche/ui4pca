@@ -6,7 +6,7 @@
 #'
 #' @example \dontrun {DrawHullConvex_PC}
 #'
-#' @import
+#' @import shiny,ggplot2, plyr, FactoMineR, factoextra, DT, ggrepel, scales,grid,gridExtra
 #'
 
 
@@ -18,6 +18,12 @@ DrawHullConvex_PC=function(pc,axes,zfactor,convex=T,
   library(grid)
   library(plyr)
   library(gridExtra)
+  library(ggrepel)
+  library(shiny)
+  library(FactoMineR)
+  library(factoextra)
+  library(ggplot2)
+  library(DT)
   library(ggrepel)
 
   xlab=paste("Dim ",axes[1],"(",round(pc$eig[axes[1],2],2),"%)",sep="")

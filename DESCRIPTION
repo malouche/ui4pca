@@ -7,6 +7,15 @@ Maintainer: Dhafer Malouche <dhafer.malouche@yale.edu>
 Description: This package contains a shiny app that helps to perform a PCA without any coding and where you can download every obtained results: figures, tables...
 License: GPL-2
 Encoding: UTF-8
-LazyData: FLAZE
+LazyData: true
 Imports: 
-  shiny,ggplot2,plyr,FactoMineR,factoextra,DT,ggrepel,scales,grid,gridExtra
+  shiny,
+  ggplot2,
+  plyr,
+  FactoMineR,
+  factoextra,
+  DT,
+  ggrepel,
+  scales,
+  grid,
+  gridExtra

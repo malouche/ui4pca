@@ -6,9 +6,9 @@
 #'
 #' @example \dontrun {launchApp()}
 #'
-#' @import shiny
+#' @import shiny,ggplot2, plyr, FactoMineR, factoextra, DT, ggrepel, scales,grid,gridExtra
 #'
 
-launchApp <- function() {
+launchApp <- function(){
   shinyApp(ui = shinyAppUI, server = shinyAppServer)
 }

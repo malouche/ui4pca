@@ -1,10 +1,17 @@
 #' Shiny app server object
 #'
 #' @importFrom graphics hist
-#' @import shiny
+#' @import shiny, shiny,ggplot2, plyr, FactoMineR, factoextra, DT, ggrepel, scales,grid,gridExtra
 #'
 
 library(shiny)
+library(shiny)
+library(FactoMineR)
+library(factoextra)
+library(ggplot2)
+library(DT)
+library(ggrepel)
+
 shinyAppUI = fluidPage(
   titlePanel("Principal Component Analysis"),
   sidebarLayout(
