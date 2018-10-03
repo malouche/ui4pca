@@ -1,0 +1,3 @@
+runPCA<-function(){
+  runApp("R/")
+}

@@ -1,0 +1,10 @@
+Package: ui4pca
+Type: Package
+Title: A Shiny App for PCA
+Version: 0.1.0
+Author: Dhafer Malouche
+Maintainer: The package maintainer <dhafer.malouche@yale.edu>
+Description: This package contains a shiny app that helps to perform a PCA without any coding and where you can download every obtained results: figures, tables...
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
