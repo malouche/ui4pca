@@ -1,16 +1,11 @@
 #' Shiny app server object
 #'
-#' @importFrom graphics hist
-#' @import shiny, shiny,ggplot2, plyr, FactoMineR, factoextra, DT, ggrepel, scales,grid,gridExtra
-#'
+#' @importFrom shiny fluidPage
+#' @importFrom DT dataTableOutput
+#' @import shiny
 
-library(shiny)
-library(shiny)
-library(FactoMineR)
-library(factoextra)
-library(ggplot2)
-library(DT)
-library(ggrepel)
+
+
 
 shinyAppUI = fluidPage(
   titlePanel("Principal Component Analysis"),
@@ -51,15 +46,15 @@ shinyAppUI = fluidPage(
                    tabPanel("Coordinates",
                             column(6,
                                    downloadButton('download_coord_pc', 'Download result (csv)')),
-                            dataTableOutput('coord_pc')),
+                            DT::dataTableOutput('coord_pc')),
                    tabPanel("Cos2",
                             column(6,
                                    downloadButton('download_coord_cos2_pc', 'Download result (csv)')),
-                            dataTableOutput("coord_cos2_pc")),
+                            DT::dataTableOutput("coord_cos2_pc")),
                    tabPanel("Contribution",
                             column(6,
                                    downloadButton('download_coord_cont_pc', 'Download result (csv)')),
-                            dataTableOutput("coord_cont_pc")),
+                            DT::dataTableOutput("coord_cont_pc")),
                    tabPanel("Plot of Individuals",
                             column(6,wellPanel(h2("Costumizing the graph"),
                                                htmlOutput("axes1_ind"),
@@ -80,19 +75,19 @@ shinyAppUI = fluidPage(
                    tabPanel("Coordinates",
                             column(6,
                                    downloadButton('download_coord_var_pc', 'Download result (csv)')),
-                            dataTableOutput('coord_var_pc')),
+                            DT::dataTableOutput('coord_var_pc')),
                    tabPanel("Cos2",
                             column(6,
                                    downloadButton('download_cos2_var_pc', 'Download result (csv)')),
-                            dataTableOutput("coord_cos2_var_pc")),
+                            DT::dataTableOutput("coord_cos2_var_pc")),
                    tabPanel("Contribution",
                             column(6,
                                    downloadButton('download_cont_var_pc', 'Download result (csv)')),
-                            dataTableOutput("coord_cont_var_pc")),
+                            DT::dataTableOutput("coord_cont_var_pc")),
                    tabPanel("Correlation",
                             column(6,
                                    downloadButton('download_cor_var_pc', 'Download result (csv)')),
-                            dataTableOutput("coord_cor_var_pc")),
+                            DT::dataTableOutput("coord_cor_var_pc")),
                    tabPanel("Plot of Variables",
                             column(6,wellPanel("",
                                                htmlOutput("varsSup_s1"),

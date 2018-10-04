@@ -6,7 +6,16 @@
 #'
 #' @example \dontrun {dviz_var}
 #'
-#' @import shiny,ggplot2, plyr, FactoMineR, factoextra, DT, ggrepel, scales,grid,gridExtra
+#' @import shiny
+#' @import ggplot2
+#' @import  plyr
+#' @import  FactoMineR
+#' @import  factoextra
+#' @import  DT
+#' @import  ggrepel
+#' @import  scales
+#' @import grid
+#' @import gridExtra
 #'
 
 dviz_var<-function(pc,namesV,scale=T,axes=c(1,2),geom=c("text","arrow"),repel=T,select.var=0,supvar=F){

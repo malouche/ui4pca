@@ -1,7 +1,15 @@
 #' Shiny app server object
 #'
-#' @importFrom graphics hist
-#' @import shiny, shiny,ggplot2, plyr, FactoMineR, factoextra, DT, ggrepel, scales,grid,gridExtra
+#' @importFrom DT renderDataTable
+#' @import shiny,
+#' @import ggplot2
+#' @import  plyr
+#' @import  FactoMineR
+#' @import  factoextra
+#' @import  DT ggrepel
+#' @import scales
+#' @import grid
+#' @import gridExtra
 
 
 shinyAppServer = function(input, output, session){
@@ -156,7 +164,7 @@ shinyAppServer = function(input, output, session){
     round(df,3)
   })
 
-  output$coord_pc<-renderDataTable({
+  output$coord_pc<-DT::renderDataTable({
 
     datatable(coord_pc_react(),options = list(
       columnDefs = list(list(className = 'dt-center',width = '200px'))
@@ -181,7 +189,7 @@ shinyAppServer = function(input, output, session){
   })
 
 
-  output$coord_cos2_pc<-renderDataTable({
+  output$coord_cos2_pc<-DT::renderDataTable({
     datatable(coord_pc_cos2_react(),options = list(
       columnDefs = list(list(className = 'dt-center',width = '200px'))
     ))
@@ -206,7 +214,7 @@ shinyAppServer = function(input, output, session){
 
 
 
-  output$coord_cont_pc<-renderDataTable({
+  output$coord_cont_pc<-DT::renderDataTable({
     datatable(coord_pc_cont_react(),options = list(
       columnDefs = list(list(className = 'dt-center',width = '200px'))
     ))
@@ -291,7 +299,7 @@ shinyAppServer = function(input, output, session){
   })
 
 
-  output$coord_var_pc<-renderDataTable({
+  output$coord_var_pc<-DT::renderDataTable({
     datatable(coord_var_pc_react(),options = list(
       columnDefs = list(list(className = 'dt-center',width = '200px'))
     ))
@@ -315,7 +323,7 @@ shinyAppServer = function(input, output, session){
   })
 
 
-  output$coord_cos2_var_pc<-renderDataTable({
+  output$coord_cos2_var_pc<-DT::renderDataTable({
     datatable(coord_cos2_var_pc_react(),options = list(
       columnDefs = list(list(className = 'dt-center',width = '200px'))
     ))
@@ -340,7 +348,7 @@ shinyAppServer = function(input, output, session){
 
 
 
-  output$coord_cont_var_pc<-renderDataTable({
+  output$coord_cont_var_pc<-DT::renderDataTable({
     datatable(coord_cont_var_pc_react(),options = list(
       columnDefs = list(list(className = 'dt-center',width = '200px'))
     ))
@@ -364,7 +372,7 @@ shinyAppServer = function(input, output, session){
   })
 
 
-  output$coord_cor_var_pc<-renderDataTable({
+  output$coord_cor_var_pc<-DT::renderDataTable({
     datatable(coord_cor_var_pc_react(),options = list(
       columnDefs = list(list(className = 'dt-center',width = '200px'))
     ))

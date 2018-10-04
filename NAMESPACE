@@ -1,2 +1,13 @@
-export(launchApp)
+export(launchAppPCA)
+import(shiny)
+import(ggplot2)
+import(plyr)
+import(FactoMineR)
+import(factoextra)
+import(DT)
+import(ggrepel)
+import(scales)
+import(grid)
+import(gridExtra)
+
 
