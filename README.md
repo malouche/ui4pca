@@ -8,7 +8,7 @@ This package contains a shiny app that can be used to perform a PCA without any 
 # Installation 
 
 ```{r, eval=F}
-devtools::install_github(malouche/ui4pca}
+devtools::install_github(malouche/ui4pca)
 ```
 
 # How can you launch the App
