@@ -1,15 +1,3 @@
-#' Shiny app server object
-#'
-#' @importFrom DT renderDataTable
-#' @import shiny,
-#' @import ggplot2
-#' @import  plyr
-#' @import  FactoMineR
-#' @import  factoextra
-#' @import  DT ggrepel
-#' @import scales
-#' @import grid
-#' @import gridExtra
 
 
 shinyAppServer = function(input, output, session){

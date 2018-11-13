@@ -4,11 +4,11 @@ Title: A Shiny App for PCA
 Version: 0.1.0
 Author: Dhafer Malouche
 Maintainer: Dhafer Malouche <dhafer.malouche@yale.edu>
-Description: This package contains a shiny app that helps to perform a PCA without any coding and where you can download every obtained results: figures, tables...
+Description: This package contains a shiny app  to perform a PCA without any coding and where you can download easily all results: figures, tables...
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Depends: 
   shiny,
   ggplot2,
   plyr,
@@ -19,3 +19,4 @@ Imports:
   scales,
   grid,
   gridExtra
+RoxygenNote: 6.1.1
