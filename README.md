@@ -2,8 +2,7 @@
 
 # Introduction
 
-This package contains a shiny app that can be used to perform a PCA without any coding and where you can download every obtained results: figures, tables...
-
+This package contains a shiny app that can be used to perform a PCA without any coding and where you can download all the figures and the tables obtained from this PCA.
 
 # Installation 
 
